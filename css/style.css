@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=DM+Serif+Display&family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../mg.jpg");
+    
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 20px;
+    right: 200px; 
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+    color: orangered;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 66px;
+    right: 180px; 
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    
+    color: orangered;
+
+}
+
+#board{
+    background: linear-gradient(rgb(88, 218, 56), rgb(243, 243, 90));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+   background: linear-gradient(rgb(75, 172, 10),rgb(246, 226, 81));
+   border:  2px solid purple;
+   border-radius: 9px;
+   transform: scale(1.05);
+    
+}
+
+.snake{
+    background-color: rgb(38, 117, 22);
+    border: .25vmin solid rgba(255, 255, 255, 0.932);
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(rgb(207, 61, 3), rgb(211, 88, 88));
+    border: .25vmin solid black;
+    border-radius: 10px;
+}
